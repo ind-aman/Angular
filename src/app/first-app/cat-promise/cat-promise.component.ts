@@ -16,17 +16,12 @@ export class CatPromiseComponent implements OnInit {
   }
   ngOnInit(): void {
     this.updateCatDetail();
-
   }
   updateCatDetail(){
-    let result = this.catService.getCatDetail();
-    console.log(result)
-    result.then((rescatDetail)=>{ 
-        this.catDetail.catFact = rescatDetail.catFact; 
-        this.catDetail.catImage= rescatDetail.catImage
+    this.catService.getCatDetail().then((rescatDetail)=>{ 
+      this.catDetail = rescatDetail
     });
    
-    console.log(this.catDetail);
   }
 
 

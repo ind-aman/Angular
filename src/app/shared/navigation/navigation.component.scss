@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background: linear-gradient(to right, black, white, black);
+    max-width: 100vw;
+    overflow: hidden;
+    button{
+        color: red;
+        background-color: black;
+        width: 3rem;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .tools{
+        font-size: 1.5rem;
+        display:  flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        .search{
+            input[type="text"]{
+                height: 2rem;
+                border-radius: 10px;
+                border-style:ridge;
+                border-color: red;
+                box-shadow: 2px 2px 3px;
+            }
+        }
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        width: 15%;
+        padding-right: 10px;
+        color: red;
+    }
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+.bi
+
+{
+    text-shadow: 2px 2px 2px black;
+}
