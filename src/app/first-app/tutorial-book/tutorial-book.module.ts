@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PromiseComponent } from './promise/promise.component';
+import { AnimationPageComponent } from './animation-page/animation-page.component';
 
 
 
 @NgModule({
   declarations: [
-    PromiseComponent
+
+    AnimationPageComponent
   ],
   imports: [
     CommonModule

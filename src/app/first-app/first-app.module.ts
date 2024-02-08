@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CatPromiseComponent } from './cat-promise/cat-promise.component';
+import { CatPromiseComponent } from './tutorial-book/cat-promise/cat-promise.component';
 import { ModelModule } from '../model/model.module';
-import { PagesComponent } from './pages/pages.component';
+import { FirstAppPageComponent } from './first-app-page/first-app-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { TutorialBookModule } from './tutorial-book/tutorial-book.module';
 
 const routes:Routes = [
-  {path:'', component: CatPromiseComponent}
+  
 ]
 
 @NgModule({
   declarations: [
     CatPromiseComponent,
-    PagesComponent
+    FirstAppPageComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +22,7 @@ const routes:Routes = [
     TutorialBookModule
   ],
   exports:[
-    PagesComponent
+    FirstAppPageComponent
   ]
 })
 export class FirstAppModule { }

@@ -1,0 +1,12 @@
+<body @moveIn>
+    <div class="sidebar">
+        <ul>
+            <li *ngFor="let x of linkArray">
+                <a routerLink="{{x.link}}">{{x.linkname}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</body>

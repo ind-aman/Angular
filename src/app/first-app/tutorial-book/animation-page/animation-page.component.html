@@ -1,0 +1,37 @@
+<body>
+    <h1>Animation List and steps</h1>
+    <div class="content1">
+        <b>Step 1: </b> First import Browser Animation module in Appmodule.ts <br>
+        <code>
+            <pre>
+                import &#123; BrowserAnimationsModule &#125; from '@angular/platform-browser/animations';
+
+            </pre>
+        </code>
+        
+        <br><b>Step 2:</b> Add Animations and changes in Component.ts file
+        <code>
+            <pre>
+                @Component(&#123;
+                    selector: 'app-first-app-page',
+                    templateUrl: './pages.component.html',
+                    styleUrls: ['./pages.component.scss'],
+                    animations: [ trigger('moveIn',[
+                    state('void', style(&#123; gridTemplateColumns:'0% 100%'&#125;)),
+                    state('*', style(&#123;gridTemplateColumns: '15%, 85%'&#125;)),
+                    transition('void <=> *',animate('70ms'))
+                    ]) ]
+                  &#125;)
+            </pre>
+           <pre style="background-color: white; color: black;">
+                1. trigger is the function that takes name of trigger and an Array that contain metaData about Animation
+                    i) <b>State: </b> state is a function that contains state name and style function
+                    ii) <b>Animation: </b> Animation takes time of animation
+           </pre>
+        </code>
+
+    </div>
+    <div  class="AnimationBox"></div>
+    <button class="btn btn-primary">Click Me</button>
+    <div @InOut class="AnimationBox"></div>
+</body>

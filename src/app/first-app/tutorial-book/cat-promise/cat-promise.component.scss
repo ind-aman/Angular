@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 body {
-    background: radial-gradient(white, black);
-    height: calc(100vh - 50px);
+    background: radial-gradient(white, rgba(0, 0, 0, 0.663));
+    min-height: calc(100vh - 50px);
+    max-height: calc(100vh - 50px);
+    overflow-y: scroll;
     display: grid;
     padding: 10px;
     grid-template-columns: 23fr 1fr;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
     section {
         width: 100%;
@@ -23,7 +29,8 @@ body {
             img {
                 max-width: 100%; /* Make sure the image doesn't exceed its container */
                 height: auto; /* Maintain aspect ratio */
-                max-height: 90vh;
+                max-height: 70vh;
+                min-height: 70vh;
             }
         }
         .cat-fact-container {
@@ -34,12 +41,17 @@ body {
         }
     }
     button {
+        outline: none;
         border: none;
         border-radius: 20px;
-        background: linear-gradient(gray, white, gray);
-        font-size: 2rem; 
+        background: linear-gradient(rgba(128, 128, 128, 0) 10%, white, rgba(114, 114, 114, 0) 90%);
+        font-size: 2rem;
+        height: calc(100vh - 200px); 
         color: red;
-        margin-top: 10px;
+        position: absolute;
+        right: 30px;
+        top: 100px;
+        width: 48px;
     }
 }
 
