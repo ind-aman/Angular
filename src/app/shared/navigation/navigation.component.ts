@@ -10,7 +10,7 @@ export class NavigationComponent {
   
 
 navigatToRoute() {
-  this.router.navigate(['./Page'])
+  this.router.navigate(['./firstApp/firstAppPage'])
 }
 
 constructor(private router:Router){

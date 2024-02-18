@@ -1,28 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CatPromiseComponent } from './tutorial-book/cat-promise/cat-promise.component';
-import { ModelModule } from '../model/model.module';
 import { FirstAppPageComponent } from './first-app-page/first-app-page.component';
-import { RouterModule, Routes } from '@angular/router';
-import { TutorialBookModule } from './tutorial-book/tutorial-book.module';
+import { FirstAppRouteModule } from './first-app-route.module';
+import { RouterModule } from '@angular/router';
+import { SecondAppPageComponent } from './second-app-page/second-app-page.component';
 
-const routes:Routes = [
-  
-]
+
 
 @NgModule({
   declarations: [
-    CatPromiseComponent,
-    FirstAppPageComponent
+    FirstAppPageComponent,
+    SecondAppPageComponent
   ],
   imports: [
     CommonModule,
-    ModelModule,
-    RouterModule.forRoot(routes),
-    TutorialBookModule
-  ],
-  exports:[
-    FirstAppPageComponent
+    RouterModule,
+    FirstAppRouteModule
   ]
+ 
 })
 export class FirstAppModule { }

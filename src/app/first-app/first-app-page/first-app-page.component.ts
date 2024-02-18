@@ -16,8 +16,8 @@ ngOnInit(): void {
   this.completeArray()
 }
 linkArray = [
-  { link: 'Cat', linkname:"CatFact"},
-  {link:'Animations', linkname:'Animation Chapter'}
+  { link: 'cat', linkname:"CatFact"},
+  {link:'animation', linkname:'Animation Chapter'}
 ];
 
 completeArray(){

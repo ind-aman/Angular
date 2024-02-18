@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstAppModule } from './first-app/first-app.module';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
@@ -14,7 +12,6 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FirstAppModule,
     SharedModule,
     BrowserAnimationsModule
   ],
