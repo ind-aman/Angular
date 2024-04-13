@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavbarManagerService } from 'src/app/services/navbar-manager.service';
 
 @Component({
   selector: 'app-navigation',
@@ -9,11 +10,11 @@ import { Router } from '@angular/router';
 export class NavigationComponent {
   
 
-navigatToRoute() {
-  this.router.navigate(['./firstApp/firstAppPage'])
+sideBarEvent() {
+  this._navbarManger.sideBarEvent();
 }
 
-constructor(private router:Router){
+constructor(private router:Router, private _navbarManger:NavbarManagerService){
     router = router
 }
 }

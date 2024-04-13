@@ -31,7 +31,16 @@
         </code>
 
     </div>
-    <div  class="AnimationBox"></div>
-    <button class="btn btn-primary">Click Me</button>
-    <div @InOut class="AnimationBox"></div>
+    <div class="implementationBox">
+
+        <button (click)="switchBackgroundAnimation()"  [@colorChange]="this.backgroundAnimationState" class="btn btn-success">Click Me</button>
+        <div class="containerBox" style="display: flex; width: 100%; ">
+
+            <button @fadeInOut [@position]="positionAnimaitonState" (click)="switchAnimationPosition()" class="btn btn-danger AnimationBox">Move</button>
+        </div>
+        <div class="containerBox" style="display: flex; width: 100%; ">
+
+            <div  [@position]="positionAnimaitonState2"  class="btn btn-danger AnimationBox"></div>
+        </div>
+    </div>
 </body>

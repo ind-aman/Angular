@@ -7,9 +7,18 @@ body{
         background-color: yellow;
         margin-left: 100px;
         display: inline-block;
+        padding: 5px;
     }
     pre{
         background-color: black;
         color: green;
+    }
+    .implementationBox{
+        border: 1px solid red;
+        padding: 20px;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
     }
 }

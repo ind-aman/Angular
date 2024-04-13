@@ -1,8 +1,18 @@
 <Nav>
-    <button (click)="navigatToRoute()"><i class="bi bi-list"></i></button>
+    <button (click)="sideBarEvent()"><i class="bi bi-list"></i></button>
     <section class="tools">
-        <a href=""><i class="bi bi-house-door-fill"></i></a>
-        <a href="" class ="bi"><b> Notes </b><i class="bi bi-archive"></i></a>
+        <div class="toolBox">
+            <div class="toolBoxIcon"><i class="bi bi-archive"></i></div>
+            <div class="toolBoxText"><b> Notes </b></div>
+        </div>
+        <div class="toolBox">
+            <div class="toolBoxIcon"><i class="bi bi-house-door-fill"></i></div>
+            <div class="toolBoxText"><b>Home</b></div>
+        </div>
+        <div class="toolBox">
+            <div class="toolBoxIcon"><img src="https://i.gifer.com/KeSB.gif" alt="" height="50px"></div>
+            <div class="toolBoxText"> . . . .</div>
+        </div>
         <div class="search">
             <input type="text" placeholder=" Search...">
         </div>

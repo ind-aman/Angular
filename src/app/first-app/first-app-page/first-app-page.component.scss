@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
      a{
         color: white;
         text-decoration: none;
@@ -7,15 +8,15 @@
 }
 body{
     display: grid;
-    grid-template-columns: 15% 85%;
    
+    grid-template-columns: 15% auto;
     .sidebar{
         display: fixed;
         height: calc(100vh - 50px);
         overflow-y: scroll                                                                                     ;
-        ul{
-            li{
-                background: rgb(154, 154, 154);
+        .sideList{
+            .sideListElement{
+                background:rgb(40,40,40);
                 height: 2rem;
                 a{
                     width: 100%;
@@ -23,13 +24,18 @@ body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    color: black;
+                    color: white;
                 }
                 &:hover{
-                    background: linear-gradient(to right bottom, white 0%, black 30%, black 70%, white 100%);
+                    background: linear-gradient(to right bottom, white 0%, rgb(40,40,40) 30%, rgb(40,40,40) 70%, white 100%);
+                    box-shadow: 0px 0px 50px red;
                     a{
-                        color: white;
+                        color: red;
+                        font-weight: bolder;
+                        text-shadow: 0px 0px 5px red;
+                        font-variant: small-caps;
                     }
+                    
                 }
             }
         }
